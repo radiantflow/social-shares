@@ -22,7 +22,7 @@ def get(name):
         platform.name = name
         return platform
     else:
-        raise ValueError("Could not find a platform matching " + domain)
+        raise ValueError("Could not find a platform matching " + name)
 
 def find(domain):
     hostname = urlparse.urlparse(domain).hostname
